@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:paddingEnd="@dimen/dimen_10dp"
+    android:paddingStart="@dimen/dimen_10dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/toolbar_nav_back_tvHeader"
+        style="@style/StylePageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="RelativeOverlap" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/toolbar_nav_back_tvCancel"
+        style="@style/StyleTextViewGreySmall"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_5dp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/toolbar_nav_back_ibBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="@dimen/dimen_5dp"
+        android:src="@drawable/ic_arrow_nav_back" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/toolbar_nav_back_ibDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="@dimen/dimen_5dp"
+        android:src="@drawable/ic_menu_drawer_grey"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar_home_flCartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/toolbar_nav_back_ibCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@drawable/ic_nav_cart_grey" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/toolbar_nav_back_tvCartItemCount"
+            android:layout_width="@dimen/dimen_15dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/badge_circle"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_10sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

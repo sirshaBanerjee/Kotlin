@@ -1,0 +1,321 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--<style for page headers>-->
+    <style name="StylePageHeader">
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/colorPageHeader</item>
+    </style>
+
+    <!--<style for grey edittext>-->
+    <style name="StyleEdittextHintGrey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_15dp</item>
+        <item name="android:textColor">@color/colorPageHeader</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+    </style>
+
+    <style name="StyleRowTextNormal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorLabelGrey</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textSize">@dimen/font_12sp</item>
+        <item name="android:padding">@dimen/dimen_10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--<style for grey textview>-->
+    <style name="StyleTextViewGrey">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/dimen_44dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@color/colorLabelGrey</item>
+    </style>
+
+    <!--<style for small grey text>-->
+    <style name="StyleTextViewGreySmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/colorLabelGrey</item>
+        <item name="android:textSize">@dimen/font_10sp</item>
+    </style>
+
+    <!--<style for orange background texts>-->
+    <style name="StyleTextViewOrangeNormal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--<style for drop down edittext>-->
+    <!--<style name="style_edittext_dropdown">-->
+    <!--<item name="android:textColor">@color/colorHintGrey</item>-->
+    <!--<item name="android:layout_height">@dimen/_50sdp</item>-->
+    <!--<item name="android:layout_width">match_parent</item>-->
+    <!--<item name="android:layout_marginEnd">@dimen/_20sdp</item>-->
+    <!--<item name="android:layout_marginStart">@dimen/_20sdp</item>-->
+    <!--<item name="android:background">@drawable/bg_button_dropdown</item>-->
+    <!--<item name="android:drawableRight">@drawable/bg_button_dropdown2</item>-->
+    <!--<item name="android:textSize">@dimen/_15sdp</item>-->
+    <!--<item name="android:layout_marginTop">@dimen/_10sdp</item>-->
+    <!--<item name="android:fontFamily">@font/muli</item>-->
+    <!--<item name="android:paddingStart">@dimen/_19sdp</item>-->
+    <!--<item name="android:textAllCaps">false</item>-->
+    <!--<item name="android:ellipsize">end</item>-->
+    <!--<item name="android:maxLines">1</item>-->
+    <!--<item name="android:gravity">left|center_vertical</item>-->
+    <!--<item name="android:textColorHint">@color/colorHintGrey</item>-->
+    <!--</style>-->
+
+    <!--<edit text background for all the edit text fields>-->
+    <style name="StyleEditTextWhiteBg">
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_25dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_25dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+        <item name="android:background">@drawable/drawable_round_edittext_bg</item>
+    </style>
+
+    <style name="StyleTextViewgreyNormal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textSize">@dimen/font_13sp</item>
+    </style>
+
+    <style name="StyleTextViewTimelineGrey">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+    </style>
+
+    <!--< style for bottom slide up dialog >-->
+    <!--<style name="style_bottom_slide_up">-->
+    <!--<item name="android:windowEnterAnimation">@anim/slide_bottom_up</item>-->
+    <!--<item name="android:windowExitAnimation">@anim/slide_bottom</item>-->
+    <!--</style>-->
+    <!--Logo Style-->
+    <style name="StyleTextViewLogo">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/logo_wholesale</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_30sp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20dp</item>
+    </style>
+
+
+    <!--Title Style-->
+    <style name="StyleTextViewTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/title_wholesale</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_14sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <!--Label White-->
+    <style name="StyleTextViewLabelSearchType">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:paddingStart">@dimen/dimen_44dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+    </style>
+
+    <!-- Row Button Dropdown-->
+    <style name="StyleTextViewSearchDropDown">
+        <item name="android:textColor">@color/colorPageHeader</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_button_dropdown</item>
+        <item name="android:textSize">@dimen/dimen_15dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:paddingStart">@dimen/dimen_19dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <!--<item name="android:textColorHint">@color/color_hint_grey</item>-->
+    </style>
+
+    <!-- Button Dropdown-->
+    <style name="StyleTextViewSearchBtnDropdown">
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_25dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_25dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5dp</item>
+    </style>
+
+    <!--Login Button -->
+    <style name="StyleButtonLogin">
+        <item name="android:textColor">@color/colorPageHeader</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--<buy now button>-->
+    <style name="StyleButtonBuyNow">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StyleButtonNavigation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_45dp</item>
+        <item name="android:background">@drawable/bg_button_drawer</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_nav_drawer</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorNavMenuText</item>
+        <item name="android:textSize">@dimen/font_13sp</item>
+    </style>
+
+    <style name="StyleButtonFilter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:drawablePadding">@dimen/dimen_3dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorNavMenuText</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+    </style>
+
+    <style name="StyleRadioButtonAddress">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dimen_35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_rb_address</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/bg_rb_text_address</item>
+        <item name="android:textSize">@dimen/font_15sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="StyleTextViewLabelOrder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/colorNavMenuText</item>
+        <item name="android:textSize">@dimen/font_17sp</item>
+    </style>
+
+    <style name="StyleTextViewLabelOrderLight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorNavMenuCredit</item>
+        <item name="android:textSize">@dimen/font_13sp</item>
+    </style>
+
+    <style name="StyleTextViewLabelLightOrange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/colorQuantityCount</item>
+        <item name="android:textSize">@dimen/font_22sp</item>
+    </style>
+
+    <style name="StyleTextViewLabelOrange">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_13sp</item>
+    </style>
+
+    <style name="StyleTextViewPriceOrange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_13sp</item>
+    </style>
+
+    <!--<progress dialog style>-->
+    <style name="StyleProgressDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+
+    <!--Toast style-->
+    <style name="StyleToast">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/font_12sp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D35217</color>
+    <color name="colorPrimaryDark">#a03e11</color>
+    <color name="colorAccent">#DC6F44</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorCommonwhiteBg">#E8E9E9</color>
+    <color name="colorViewSeparator">#E8E9E9</color>
+    <color name="colorHintGrey">#C4D4D7</color>
+    <color name="colorTimeline">#666666</color>
+    <color name="colorTimelineStatus">#333333</color>
+    <color name="colorLabelGrey">#585F68</color>
+    <color name="colorPageHeader">#46484B</color>
+    <color name="colorCommonBg">#D35217</color>
+    <color name="colorButtonDropDown">#F4F6F7</color>
+    <color name="colorButtonDropdownTwo">#DC6F44</color>
+    <color name="colorStatusActiveLine">#D35217</color>
+    <color name="colorButtonDropdownText">#585F68</color>
+    <color name="colorShippingText">#228B22</color>
+    <color name="colorProductReject">#C41605</color>
+    <color name="colorNavMenuText">#46484B</color>
+    <color name="colorNavMenuCredit">#5E6166</color>
+    <color name="colorCategoryBg">#91DE8361</color>
+    <color name="colorProductTransit">#EA9800</color>
+    <color name="colorQuantityCount">#EA9800</color>
+</resources>

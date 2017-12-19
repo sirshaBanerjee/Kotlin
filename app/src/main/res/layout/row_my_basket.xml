@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCommonwhiteBg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        app:cardCornerRadius="@dimen/dimen_2dp"
+        tools:cardElevation="@dimen/dimen_3dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="@dimen/dimen_2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/row_my_basket_ivProductImage"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/dimen_10dp" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/row_my_basket_tvProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/row_my_basket_ivProductImage"
+                    android:layout_toEndOf="@id/row_my_basket_ivProductImage"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/muli"
+                    android:lines="1"
+                    android:textColor="@color/colorNavMenuText"
+                    android:textSize="@dimen/font_17sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/row_my_basket_tvBolkRef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row_my_basket_tvProductName"
+                    android:layout_toEndOf="@id/row_my_basket_ivProductImage"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/muli"
+                    android:lines="1"
+                    android:textColor="@color/colorNavMenuCredit"
+                    android:textSize="@dimen/font_13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/row_my_basket_ivProductImage"
+                    android:layout_below="@id/row_my_basket_tvBolkRef"
+                    android:layout_gravity="bottom"
+                    android:layout_toEndOf="@id/row_my_basket_ivProductImage">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_my_basket_tvProductPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/muli"
+                        android:lines="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_13sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_my_basket_tvQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_toStartOf="@id/row_my_basket_bvProductQuantity"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/muli"
+                        android:lines="1"
+                        android:text="@string/label_qty"
+                        android:textColor="@color/colorNavMenuText"
+                        android:textSize="@dimen/font_13sp" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/row_my_basket_bvProductQuantity"
+                        android:layout_width="@dimen/dimen_80dp"
+                        android:layout_height="@dimen/dimen_80dp"
+                        android:layout_alignParentEnd="true"
+                        android:inputType="number"
+                        android:textColor="@color/colorNavMenuText"
+                        android:textSize="@dimen/font_13sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/row_my_basket_ibDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_cart_delete" />
+
+</RelativeLayout>

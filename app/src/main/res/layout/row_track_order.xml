@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/row_track_order_llParent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/row_track_order_ivStatusDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_filled_circle"
+                    android:contentDescription="@null" />
+
+                <View
+                    android:id="@+id/row_track_order_viewStatusLine"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorHintGrey"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row_track_order_llOrderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvOrderStatus"
+                        style="@style/StyleTextViewTimelineGrey"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorPageHeader" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvOrderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/muli"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPageHeader"
+                        android:textSize="@dimen/font_12sp" />
+
+                </LinearLayout>
+
+                <!--<description for order confirmed>-->
+                <LinearLayout
+                    android:id="@+id/row_track_order_llOrderConfirmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_40sp" />
+                </LinearLayout>
+
+                <!--<description for ready to ship>-->
+                <LinearLayout
+                    android:id="@+id/row_track_order_llReadyToShip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvShipLocationNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimelineStatus"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvShipDescriptionDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="4"
+                        android:textSize="@dimen/font_20sp" />
+
+                </LinearLayout>
+
+                <!--<description for in transit>-->
+                <RelativeLayout
+                    android:id="@+id/row_track_order_rlInsTransit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dimen_30dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvInTransitInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:text="@string/label_tracking_information"
+                        android:textColor="@color/colorTimelineStatus"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvInTransitNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/row_track_order_tvInTransitInfo"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvInTransitDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/row_track_order_tvInTransitNote"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimelineStatus"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvTrackingCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/row_track_order_tvInTransitInfo"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:fontFamily="@font/muli"
+                        android:text="@string/label_tracking_code"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tv_trackingCodeNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/row_track_order_tvInTransitNote"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimelineStatus"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/row_track_order_tvInTransitDetails"
+                        android:textSize="@dimen/font_12sp" />
+                </RelativeLayout>
+
+                <!--<description for arrived at destination>-->
+                <LinearLayout
+                    android:id="@+id/row_track_order_llArrivedAtDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvAddressType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimelineStatus"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvAddressTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvAddressPostalCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvAddressCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/row_track_order_tvAddressContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/colorTimeline"
+                        android:textSize="@dimen/font_12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

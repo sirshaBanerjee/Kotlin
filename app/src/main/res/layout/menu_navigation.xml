@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/menu_navigation_rlProfileDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonDropDown"
+        android:paddingBottom="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_10dp"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_20dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/menu_navigation_ivProfileImage"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:background="@null"
+            android:src="@drawable/ic_profile" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/menu_navigation_tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/menu_navigation_ivProfileImage"
+            android:ellipsize="end"
+            android:fontFamily="@font/muli"
+            android:maxLines="1"
+            android:textColor="@color/colorNavMenuText"
+            android:textSize="@dimen/font_15sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/menu_navigation_tvCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_navigation_tvName"
+            android:layout_toEndOf="@id/menu_navigation_ivProfileImage"
+            android:ellipsize="end"
+            android:fontFamily="@font/muli"
+            android:maxLines="1"
+            android:text="@string/label_credit"
+            android:textColor="@color/colorNavMenuCredit"
+            android:textSize="@dimen/font_10sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/menu_navigation_tvTotalCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_navigation_tvName"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_toEndOf="@id/menu_navigation_tvCredit"
+            android:ellipsize="end"
+            android:fontFamily="@font/muli"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_10sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/menu_navigation_bvDashboard"
+        style="@style/StyleButtonNavigation"
+        android:stateListAnimator="@null"
+        android:text="@string/label_dashboard" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/menu_navigation_bvMyOrders"
+        style="@style/StyleButtonNavigation"
+        android:stateListAnimator="@null"
+        android:text="@string/label_my_orders" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/menu_navigation_bvAddressBook"
+        style="@style/StyleButtonNavigation"
+        android:stateListAnimator="@null"
+        android:text="@string/label_address_book" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/menu_navigation_bvAboutUs"
+        style="@style/StyleButtonNavigation"
+        android:stateListAnimator="@null"
+        android:text="@string/label_about_us" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/menu_navigation_bvContactUs"
+        style="@style/StyleButtonNavigation"
+        android:stateListAnimator="@null"
+        android:text="@string/label_contact_us" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/menu_navigation_bvTerms"
+        style="@style/StyleButtonNavigation"
+        android:stateListAnimator="@null"
+        android:text="@string/label_terms" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/menu_navigation_llLogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@drawable/bg_button_logout"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/menu_navigation_tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_45dp"
+                android:background="@null"
+                android:drawableEnd="@drawable/ic_logout"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:fontFamily="@font/muli"
+                android:gravity="center"
+                android:text="@string/label_logout"
+                android:textAllCaps="false"
+                android:textColor="@color/colorHintGrey"
+                android:textSize="@dimen/font_13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

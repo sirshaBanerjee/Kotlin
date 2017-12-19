@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_20dp">
+
+    <View
+        android:id="@+id/row_order_basket_viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/colorHintGrey" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvQuantity"
+        style="@style/StyleTextViewLabelLightOrange"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvQuantityLbl"
+        style="@style/StyleTextViewLabelOrder"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/row_order_basket_tvQuantity"
+        android:layout_alignTop="@id/row_order_basket_tvQuantity"
+        android:layout_toStartOf="@id/row_order_basket_tvQuantity"
+        android:gravity="center"
+        android:text="@string/label_qty"
+        android:textSize="@dimen/font_13sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvName"
+        style="@style/StyleTextViewLabelOrder"
+        android:layout_alignBottom="@id/row_order_basket_tvQuantity"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/row_order_basket_tvQuantity"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_toStartOf="@id/row_order_basket_tvQuantityLbl"
+        android:gravity="center_vertical" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvBolkRef"
+        style="@style/StyleTextViewLabelOrderLight"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/row_order_basket_tvName" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvUnitPrice"
+        style="@style/StyleTextViewLabelOrderLight"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/row_order_basket_tvName"
+        android:text="@string/label_unit_price" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvAmount"
+        style="@style/StyleTextViewLabelLightOrange"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/row_order_basket_tvBolkRef"
+        android:textSize="@dimen/font_17sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvDateLbl"
+        style="@style/StyleTextViewLabelOrderLight"
+        android:layout_alignBottom="@id/row_order_basket_tvAmount"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/row_order_basket_tvBolkRef"
+        tools:text="@string/label_date" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_order_basket_tvDate"
+        style="@style/StyleTextViewLabelOrderLight"
+        android:layout_alignBottom="@id/row_order_basket_tvAmount"
+        android:layout_below="@id/row_order_basket_tvBolkRef"
+        android:layout_toEndOf="@id/row_order_basket_tvDateLbl" />
+
+
+</RelativeLayout>

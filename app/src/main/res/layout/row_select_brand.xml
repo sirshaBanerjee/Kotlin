@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/colorHintGrey" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/row_select_brand_tvBrandName"
+        style="@style/StyleRowTextNormal" />
+</LinearLayout>

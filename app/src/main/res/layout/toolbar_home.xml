@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorCommonBg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/dimen_10dp"
+    android:paddingStart="@dimen/dimen_10dp">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/toolbar_home_ibDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/dimen_5dp"
+        android:src="@drawable/ic_menu_drawer" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/toolbar_home_ibBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/dimen_5dp"
+        android:src="@drawable/ic_arrow_nav_back_white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/toolbar_home_tvTitle"
+            style="@style/StyleTextViewLabelSearchType"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="0dp"
+            android:drawableEnd="@drawable/ic_arrow_up"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:gravity="center"
+            android:padding="0dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar_home_flCartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/toolbar_home_ibCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@drawable/ic_cart_white" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/toolbar_home_tvCartCount"
+            android:layout_width="@dimen/dimen_15dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_gravity="end"
+            android:background="@drawable/badge_circle"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_10sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</LinearLayout>
